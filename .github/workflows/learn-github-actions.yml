@@ -1,0 +1,17 @@
+name: GitHub Actions Demo
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo "🎉 The workflow is now running!"
+      - name: Run a multi-line script
+        run: |
+          echo "This is the first line"
+          echo "This is the second line"
+
